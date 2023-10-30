@@ -3,7 +3,8 @@ import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
-import Styles from "./../styles/style.css"
+import Styles from "/src/styles/style.css";
+import "./main.css";
 
 export interface Props {
   title: string;
@@ -30,7 +31,7 @@ const makeTitle = title
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="stylesheet" href={Styles} />
+    <link rel="stylesheet" href="/src/styles/style.css" />
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
@@ -55,7 +56,7 @@ const makeTitle = title
       }}
     />
   </head>
-  <body>
+  <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
     <Navbar />
     <slot />
     <Footer />
