@@ -1,25 +1,30 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/truck.png";
+import SingleFoodItem from "./single-food-item.astro";
 ---
 
-<main class="grid lg:grid-cols-2 pb-4 md:pb-12">
-  <div class="p-4">
+<div class="row pt-16">
     <h1
-      class="text-6xl lg:text-7xl xl:text-8xl font-bold lg:tracking-tight xl:tracking-tighter text-white">
-      LOCATION & SCHEDULE
-    </h1>
-    <hr class="w-40 h-1 my-4 bg-gray-100 border-0 rounded md:my-10" />
+    class="text-6xl lg:text-7xl xl:text-8xl text-center font-bold lg:tracking-tight xl:tracking-tighter text-white">
+    OUR SPECIALS
+  </h1>
+  <p class="px-40 py-8 text-center text-lg text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+</div>
+<main class="grid lg:grid-cols-4 p-12 md:pb-12">
+  <div class=" border hover:bg-purple-700 ease-in-out duration-300">
+      <SingleFoodItem />
+    </div>
   </div>
-  <div class="p-4">
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter text-white">
-      Marketing website done with Astro
-    </h1>
-    <p class="text-lg mt-4 text-white max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS.
-    </p>
+  <div class="border hover:bg-purple-700 ease-in-out duration-300">
+      <SingleFoodItem />
+    </div>
+  </div><div class="border hover:bg-purple-700 ease-in-out duration-300">
+      <SingleFoodItem />
+    </div>
+  </div>
+  <div class="border hover:bg-purple-700 ease-in-out duration-300">
+    <SingleFoodItem />
   </div>
 </main>
 
