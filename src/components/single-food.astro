@@ -3,15 +3,15 @@ import { Picture } from "@astrojs/image/components";
 import SingleFoodItem from "./single-food-item.astro";
 ---
 
-<div class="row pt-16">
+<div class="row md:pt-16">
     <h1
-    class="text-6xl lg:text-7xl xl:text-8xl text-center font-bold lg:tracking-tight xl:tracking-tighter text-white">
+    class="text-3xl md:text-6xl lg:text-7xl xl:text-8xl text-center font-bold lg:tracking-tight xl:tracking-tighter text-white">
     OUR SPECIALS
   </h1>
-  <p class="px-40 py-8 text-center text-lg text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+  <p class="md:px-40 py-8 text-center text-lg text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
 </div>
-<main class="grid lg:grid-cols-4 p-12 md:pb-12">
+<main class="grid lg:grid-cols-4 p-3 md:p-12 md:pb-12">
   <div class=" border hover:bg-purple-700 ease-in-out duration-300">
       <SingleFoodItem />
     </div>
